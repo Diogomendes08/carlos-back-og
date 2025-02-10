@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro Tela</title>
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0e1; /* Cor de fundo quente */
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #FF7043; /* Cor laranja quente */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 5px solid #FF5722; /* Borda laranja mais escura para dar destaque */
+    }
+
+    /* Estilo para o conteúdo */
+    .content {
+      background-color: white;
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Estilo das seções de pessoas */
+    .person {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      padding: 15px;
+      background-color: #ffe0b2; /* Cor de fundo suave laranja */
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .person:hover {
+      background-color: #FFEB3B; /* Efeito ao passar o mouse com cor quente */
+    }
+
+    .person img {
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+      border: 3px solid #FF7043; /* Borda nas imagens em cor laranja */
+    }
+
+    .person-text {
+      max-width: 600px;
+    }
+
+    .person-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .person-text strong {
+      color: #FF7043; /* Cor quente para os nomes */
+    }
+
+    /* Estilo da imagem final */
+    .end-image {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .end-image img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Quadro Tela</h1>
+  </header>
+
+  <!-- Conteúdo -->
+  <div class="content">
+    <!-- Pessoa 1 -->
+    <div class="person">
+      <img src="https://www.agendartecultura.com.br/wp-content/uploads/2022/12/meneson.jpg" alt="Pessoa 1">
+      <div class="person-text">
+        <p><strong>Carlão:</strong> Olá, meu nome é Carlos. Eu sou designer e adoro criar coisas bonitas e úteis. Gosto de trabalhar em projetos criativos e desafiadores!</p>
+      </div>
+    </div>
+
+    <!-- Pessoa 2 -->
+    <div class="person">
+      <img src="https://dentistaubatuba.com.br/wp-content/uploads/2021/06/o-que-as-pessoas-bonitas-tem-em-comum-2.jpg" alt="Pessoa 2">
+      <div class="person-text">
+        <p><strong>Joana:</strong> Oi, sou a Joana! Trabalho como desenvolvedor de software. Sempre estou em busca de novos desafios tecnológicos e adoro aprender novas linguas
