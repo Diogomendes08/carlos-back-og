@@ -3,37 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quadro Tela</title>
+  <title>Conversa entre Pessoas</title>
   <style>
     /* Estilos básicos */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #f0f0f0;
       color: #333;
     }
 
-    /* Cabeçalho */
-    header {
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
+    /* Menu */
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .menu button {
       padding: 10px;
+      margin: 0 15px;
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
     }
 
-    /* Estilo para o conteúdo */
-    .content {
-      margin: 10px auto;
-      padding: 15px;
+    .menu button:hover {
+      background-color: #005f73;
+    }
+
+    /* Container do chat */
+    .chat-container {
       max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    /* Estilo das seções de pessoas */
+    /* Estilo das pessoas */
     .person {
       display: flex;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       padding: 10px;
     }
 
@@ -44,48 +61,69 @@
       margin-right: 15px;
     }
 
-    .person-text p {
+    /* Balões de diálogo */
+    .dialogue {
+      background-color: #e0e0e0;
+      border-radius: 10px;
+      padding: 10px;
+      max-width: 70%;
+    }
+
+    .person1 .dialogue {
+      background-color: #d1f7c4; /* Cor diferente para a primeira pessoa */
+      margin-left: auto;
+    }
+
+    .person2 .dialogue {
+      background-color: #c4d9ff; /* Cor diferente para a segunda pessoa */
+    }
+
+    .person3 .dialogue {
+      background-color: #ffe0b2; /* Cor diferente para a terceira pessoa */
+    }
+
+    /* Texto das falas */
+    .dialogue p {
+      margin: 0;
       font-size: 1rem;
       line-height: 1.4;
     }
 
-    .person-text strong {
+    strong {
       font-weight: bold;
-    }
-
-    /* Estilo da imagem final */
-    .end-image {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .end-image img {
-      width: 100%;
-      max-width: 800px;
     }
   </style>
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <h1>Quadro Tela</h1>
-  </header>
+  <!-- Menu -->
+  <div class="menu">
+    <button>Editar Texto</button>
+    <button>Limpar Texto</button>
+  </div>
 
-  <!-- Conteúdo -->
-  <div class="content">
+  <!-- Container do chat -->
+  <div class="chat-container">
     <!-- Pessoa 1 -->
-    <div class="person">
+    <div class="person person1">
       <img src="https://www.agendartecultura.com.br/wp-content/uploads/2022/12/meneson.jpg" alt="Pessoa 1">
-      <div class="person-text">
-        <p><strong>Carlão:</strong> Olá, meu nome é Carlos. Eu sou designer e adoro criar coisas bonitas e úteis. Gosto de trabalhar em projetos criativos e desafiadores!</p>
+      <div class="dialogue" contenteditable="true">
+        <p><strong>Carlão:</strong> Olá, você está bem hoje?</p>
       </div>
     </div>
 
-    <!-- Pessoa 2 -->
-    <div class="person">
+    <!-- Pessoa 2 (Responde) -->
+    <div class="person person2">
       <img src="https://dentistaubatuba.com.br/wp-content/uploads/2021/06/o-que-as-pessoas-bonitas-tem-em-comum-2.jpg" alt="Pessoa 2">
-      <div class="person-text">
-        <p><strong>Joana:</strong> Oi, sou a Joana! Trabalho como desenvolvedor de software. Sempre estou em busca de novos desafios tecnológicos e adoro aprender novas linguas!</p>
+      <div class="dialogue" contenteditable="true">
+        <p><strong>Joana:</strong> Oi, Carlos! Sim, estou ótima. E você?</p>
+      </div>
+    </div>
+
+    <!-- Pessoa 3 (Responde a ambos) -->
+    <div class="person person3">
+      <img src="https://via.placeholder.com/60" alt="Pessoa 3">
+      <div class="dialogue" contenteditable="true">
+        <p><strong>Maria:</strong> Olá, pessoal! Eu também estou bem. Que bom que todos estão ótimos!</p>
       </div>
     </div>
   </div>
