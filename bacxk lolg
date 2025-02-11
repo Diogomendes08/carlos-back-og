@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conversa entre Pessoas</title>
   <style>
-    /* Estilos básicos */
+  
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -14,7 +14,7 @@
       color: #333;
     }
 
-    /* Menu */
+  
     .menu {
       display: flex;
       justify-content: center;
@@ -36,7 +36,7 @@
       background-color: #005f73;
     }
 
-    /* Container do chat */
+ 
     .chat-container {
       max-width: 900px;
       margin: 30px auto;
@@ -46,7 +46,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    /* Estilo das pessoas */
+
     .person {
       display: flex;
       align-items: center;
@@ -61,7 +61,7 @@
       margin-right: 15px;
     }
 
-    /* Balões de diálogo */
+    
     .dialogue {
       background-color: #e0e0e0;
       border-radius: 10px;
@@ -70,19 +70,19 @@
     }
 
     .person1 .dialogue {
-      background-color: #d1f7c4; /* Cor diferente para a primeira pessoa */
+      background-color: #d1f7c4;
       margin-left: auto;
     }
 
     .person2 .dialogue {
-      background-color: #c4d9ff; /* Cor diferente para a segunda pessoa */
+      background-color: #c4d9ff; 
     }
 
     .person3 .dialogue {
-      background-color: #ffe0b2; /* Cor diferente para a terceira pessoa */
+      background-color: #ffe0b2; 
     }
 
-    /* Texto das falas */
+
     .dialogue p {
       margin: 0;
       font-size: 1rem;
@@ -95,13 +95,13 @@
   </style>
 </head>
 <body>
-  <!-- Menu -->
+
   <div class="menu">
     <button>Editar Texto</button>
     <button>Limpar Texto</button>
   </div>
 
-  <!-- Container do chat -->
+
   <div class="chat-container">
     <!-- Pessoa 1 -->
     <div class="person person1">
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <!-- Pessoa 2 (Responde) -->
+  
     <div class="person person2">
       <img src="https://dentistaubatuba.com.br/wp-content/uploads/2021/06/o-que-as-pessoas-bonitas-tem-em-comum-2.jpg" alt="Pessoa 2">
       <div class="dialogue" contenteditable="true">
@@ -119,11 +119,11 @@
       </div>
     </div>
 
-    <!-- Pessoa 3 (Responde a ambos) -->
+   >
     <div class="person person3">
-      <img src="https://via.placeholder.com/60" alt="Pessoa 3">
+      <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=1080,quality=75,fit=pad,format=webp/uploads/2024/09/Abel-Ferreira-Palmeiras-aspect-ratio-512-320.jpeg" alt="Pessoa 3">
       <div class="dialogue" contenteditable="true">
-        <p><strong>Maria:</strong> Olá, pessoal! Eu também estou bem. Que bom que todos estão ótimos!</p>
+        <p><strong>Abel Ferreira:</strong> Olá, pessoal! Eu também estou bem. Que bom que todos estão ótimos!</p>
       </div>
     </div>
   </div>
